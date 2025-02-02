@@ -1,16 +1,12 @@
 // Menú lateral
+// Menú desplegable con animación
 document.getElementById('menu-btn').addEventListener('click', function() {
-    let menu = document.getElementById('menu');
-    menu.style.right = menu.style.right === '0px' ? '-250px' : '0px';
+    document.getElementById('menu').style.top = "0";
 });
 
-// Cerrar menú al hacer clic en un enlace
-document.querySelectorAll('#menu a').forEach(link => {
-    link.addEventListener('click', function() {
-        document.getElementById('menu').style.right = '-250px';
-    });
+document.getElementById('cerrar-menu').addEventListener('click', function() {
+    document.getElementById('menu').style.top = "-100%";
 });
-
 // Carrito de compras
 let carrito = [];
 const contadorCarrito = document.getElementById('contador-carrito');
