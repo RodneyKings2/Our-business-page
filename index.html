@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RK's_store</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <h1 id="titulo">RK's_store</h1>
+        <button id="menu-btn">☰</button>
+        <div id="carrito-btn">
+            🛒 <span id="contador-carrito">0</span>
+        </div>
+    </header>
+
+    <nav id="menu">
+        <ul>
+            <li><a href="#productos">📦 Productos</a></li>
+            <li><a href="#contacto">📞 Nuestro Contacto</a></li>
+            <li><a href="#info">ℹ️ Información de la Página</a></li>
+            <li><a href="#login">🔑 Iniciar Sesión</a></li>
+        </ul>
+    </nav>
+
+    <section id="productos">
+        <h2>Productos</h2>
+        <div class="producto" data-nombre="Pulsera Elegante" data-precio="10">
+            <img src="accesorio2.jpg" alt="Pulsera">
+            <p>Pulsera elegante - $10</p>
+            <button class="comprar">Añadir al carrito</button>
+        </div>
+        <div class="producto" data-nombre="Collar Dorado" data-precio="15">
+            <img src="accesorio1.jpg" alt="Collar">
+            <p>Collar dorado - $15</p>
+            <button class="comprar">Añadir al carrito</button>
+        </div>
+    </section>
+
+    <section id="carrito">
+        <h2>Carrito de Compras</h2>
+        <ul id="lista-carrito"></ul>
+        <button id="vaciar-carrito">Vaciar Carrito</button>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

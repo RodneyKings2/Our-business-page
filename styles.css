@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url('fondo.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+}
+
+header {
+    background: black;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+}
+
+#titulo {
+    font-size: 2rem;
+    animation: relampago 1s infinite alternate;
+}
+
+@keyframes relampago {
+    0% { color: white; }
+    100% { color: blue; text-shadow: 0 0 10px cyan; }
+}
+
+#menu {
+    position: fixed;
+    right: -250px;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    background: black;
+    transition: right 0.3s;
+    border-radius: 15px 0px 15px;
+}
+
+#menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+#menu ul li {
+    padding: 15px;
+    border-bottom: 1px solid gray;
+}
+
+#menu ul li a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+#menu-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+#carrito-btn {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.producto {
+    display: inline-block;
+    margin: 20px;
+}
+
+.producto img {
+    width: 200px;
+    border-radius: 10px;
+    transition: transform 0.3s, border 0.5s;
+    border: 3px solid blue;
+    border-radius: 15px;
+}
+
+.producto img:hover {
+    transform: scale(1.1);
+    border-color: cyan;
+}
+
+.comprar {
+    background: blue;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.comprar:hover {
+    background: darkblue;
+}
+
+#carrito {
+    margin-top: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#lista-carrito {
+    list-style: none;
+    padding: 0;
+}
+
+#vaciar-carrito {
+    background: red;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#vaciar-carrito:hover {
+    background: darkred;
+}
+#info {
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
